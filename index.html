@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Group 5 - Library Resource & Loan Helper</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Group 5 - Library Resource and Loan Helper</h1>
+
+    <p><b>Users:</b> Students, Lecturers, Library Staff</p>
+
+    <div class="search-bar">
+
+        <input type="text" id="search"
+        placeholder="Search by title, author...">
+
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option>Computer Science</option>
+            <option>Business</option>
+            <option>Education</option>
+            <option>General</option>
+        </select>
+
+    </div>
+
+    <table id="bookTable">
+
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Author</th>
+                <th>Location</th>
+                <th>Availability</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="bookBody"></tbody>
+
+    </table>
+
+    <div class="form-box">
+
+        <h3>Reservation-Request Form</h3>
+
+        <label>Full Name:</label><br>
+        <input type="text" id="name" placeholder="e.g. Kato John">
+        <br>
+        <span id="nameError" class="error"></span>
+        <br><br>
+
+        <label>Student/Staff ID:</label><br>
+        <input type="text" id="studentId" placeholder="e.g. 2024/BSC/001">
+        <br>
+        <span id="idError" class="error"></span>
+        <br><br>
+
+        <label>Selected Book:</label><br>
+        <input type="text" id="selectedBook" readonly>
+        <br><br>
+
+        <label>Reservation Date:</label><br>
+        <input type="date" id="resDate">
+        <br>
+        <span id="dateError" class="error"></span>
+        <br><br>
+
+        <button id="reserveBtn">
+            Reserve Now
+        </button>
+
+        <div id="result" class="return-box" style="display:none"></div>
+
+    </div>
+
+</div>
+
+<!-- Link to JavaScript file -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+  
+</body>
+
+</html>
